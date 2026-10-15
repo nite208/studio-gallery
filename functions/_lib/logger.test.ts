@@ -1,8 +1,8 @@
 import { describe, it, expect, vi } from 'vitest';
 import { logServer } from './logger';
 
-describe('logServer', () => {
-  it('logs info messages with timestamp and level', () => {
+describe('server logger', () => {
+  it('logs info messages as structured JSON', () => {
     const consoleSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
     const entry = logServer('info', 'Server started', { port: 3000 });
 

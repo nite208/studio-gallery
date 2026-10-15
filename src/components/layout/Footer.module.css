@@ -2,15 +2,15 @@
   background-color: var(--color-white);
   border-top: 1px solid var(--color-light-brown);
   margin-top: auto;
-  padding: 3rem 1.5rem 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   width: 100%;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 2.5rem;
 }
 
@@ -74,6 +74,7 @@
 .socialSection {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 0.75rem;
 }
 
@@ -87,6 +88,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 0.5rem;
 }
 
@@ -107,11 +109,20 @@
 
 @media (max-width: 640px) {
   .footer {
-    padding: 2rem 1rem 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
   }
 
-  .container {
-    grid-template-columns: 1fr;
+  .inner {
+    flex-direction: column;
     gap: 2rem;
+  }
+
+  .socialSection {
+    align-items: flex-start;
+  }
+
+  .socialList {
+    align-items: flex-start;
   }
 }

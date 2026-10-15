@@ -1,7 +1,7 @@
 .section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
 }
 
 .title {
@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
+  width: 100%;
 }
 
 .cardPlaceholder {
@@ -47,7 +48,8 @@
 
 @media (max-width: 640px) {
   .section {
-    padding: 2rem 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .title {
