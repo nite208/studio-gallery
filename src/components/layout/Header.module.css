@@ -1,0 +1,79 @@
+.header {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-light-brown);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brandLink {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary-brown);
+  letter-spacing: -0.02em;
+}
+
+.brandLink:hover {
+  color: var(--color-secondary-brown);
+}
+
+.logo {
+  height: 2.25rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.studioName {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navLink {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-dark-brown);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: color 0.15s ease;
+}
+
+.navLink:hover {
+  color: var(--color-secondary-brown);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0.75rem 1rem;
+  }
+
+  .brandLink {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    gap: 0.75rem;
+  }
+
+  .navLink {
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,117 @@
+.footer {
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-light-brown);
+  margin-top: auto;
+  padding: 3rem 1.5rem 2rem;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary-brown);
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: var(--color-secondary-brown);
+  margin-bottom: 0.5rem;
+}
+
+.address {
+  font-size: 0.9rem;
+  color: var(--color-dark-brown);
+}
+
+.email {
+  font-size: 0.9rem;
+}
+
+.contactLink {
+  color: var(--color-primary-brown);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contactLink:hover {
+  color: var(--color-secondary-brown);
+}
+
+.whatsapp {
+  margin-top: 0.5rem;
+}
+
+.whatsappLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-primary-brown);
+  color: var(--color-white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.whatsappLink:hover {
+  background-color: var(--color-secondary-brown);
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.subHeading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary-brown);
+}
+
+.socialList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.socialItem {
+  margin: 0;
+}
+
+.socialLink {
+  font-size: 0.9rem;
+  color: var(--color-dark-brown);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.socialLink:hover {
+  color: var(--color-primary-brown);
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

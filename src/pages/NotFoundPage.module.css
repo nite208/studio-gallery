@@ -1,0 +1,35 @@
+.container {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-primary-brown);
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: var(--color-dark-brown);
+  margin-bottom: 2rem;
+}
+
+.homeLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.25rem;
+  background-color: var(--color-primary-brown);
+  color: var(--color-white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.homeLink:hover {
+  background-color: var(--color-secondary-brown);
+}

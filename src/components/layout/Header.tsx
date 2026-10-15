@@ -1,0 +1,32 @@
+import type { JSX } from 'react';
+import { Link } from 'react-router-dom';
+import { siteConfig } from '../../config/site';
+import styles from './Header.module.css';
+
+export function Header(): JSX.Element {
+  return (
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <Link to="/" className={styles.brandLink}>
+          {siteConfig.logoUrl ? (
+            <img
+              src={siteConfig.logoUrl}
+              alt={siteConfig.studioName}
+              className={styles.logo}
+            />
+          ) : (
+            <span className={styles.studioName}>{siteConfig.studioName}</span>
+          )}
+        </Link>
+        <nav className={styles.nav}>
+          <Link to="/" className={styles.navLink}>
+            Gallery
+          </Link>
+          <Link to="/admin" className={styles.navLink}>
+            Admin
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+}

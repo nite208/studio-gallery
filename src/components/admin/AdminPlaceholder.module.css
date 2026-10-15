@@ -1,0 +1,48 @@
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary-brown);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--color-secondary-brown);
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-brown);
+  border-radius: 6px;
+  padding: 2rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-dark-brown);
+  margin-bottom: 0.5rem;
+}
+
+.cardText {
+  font-size: 0.95rem;
+  color: var(--color-dark-brown);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

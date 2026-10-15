@@ -1,0 +1,60 @@
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary-brown);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--color-secondary-brown);
+  margin-bottom: 2rem;
+}
+
+.gridPlaceholder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.cardPlaceholder {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-brown);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagePlaceholder {
+  aspect-ratio: 4 / 3;
+  background-color: var(--color-light-brown);
+  opacity: 0.5;
+}
+
+.caption {
+  padding: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-dark-brown);
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
