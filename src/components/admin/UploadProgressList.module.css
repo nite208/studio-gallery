@@ -1,0 +1,109 @@
+.container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-primary-brown);
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: var(--color-secondary-brown);
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.item {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-brown);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fileName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-dark-brown);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.statusText {
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.statusPending {
+  color: var(--color-secondary-brown);
+}
+
+.statusUploading {
+  color: var(--color-primary-brown);
+}
+
+.statusSuccess {
+  color: #046c4e;
+}
+
+.statusError {
+  color: #9b1c1c;
+}
+
+.progressBarTrack {
+  height: 6px;
+  background-color: var(--color-light-brown);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 100%;
+  background-color: var(--color-primary-brown);
+  transition: width 0.2s ease;
+}
+
+.errorRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #9b1c1c;
+}
+
+.retryButton {
+  background: none;
+  border: none;
+  color: var(--color-primary-brown);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: 0.8rem;
+}

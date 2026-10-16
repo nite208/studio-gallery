@@ -16,6 +16,7 @@ export interface SiteConfig {
   readonly studioName: string;
   readonly tagline: string;
   readonly logoUrl?: string;
+  readonly coverPublicId?: string;
   readonly whatsappNumber: string;
   readonly email: string;
   readonly address: string;

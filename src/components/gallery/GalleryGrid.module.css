@@ -1,12 +1,13 @@
 .masonry {
   columns: 1;
-  column-gap: 1.5rem;
+  column-gap: 16px;
   width: 100%;
 }
 
 @media (min-width: 640px) {
   .masonry {
     columns: 2;
+    column-gap: 1.5rem;
   }
 }
 
@@ -24,7 +25,13 @@
 
 .item {
   break-inside: avoid;
-  margin-bottom: 1.5rem;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 640px) {
+  .item {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .button {
@@ -56,4 +63,10 @@
   display: block;
   border-radius: 4px;
   background-color: var(--color-light-brown);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.imageLoaded {
+  opacity: 1;
 }

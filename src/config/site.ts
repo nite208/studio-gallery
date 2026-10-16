@@ -4,6 +4,7 @@ export const siteConfig: SiteConfig = {
   studioName: 'Studio Placeholder',
   tagline: 'Artistic Photography and Visual Storytelling',
   logoUrl: undefined,
+  coverPublicId: undefined,
   whatsappNumber: '15550192834',
   email: 'contact@studioplaceholder.com',
   address: '100 Artisan Way, Suite 4, Creative City',
