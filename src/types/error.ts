@@ -1,1 +1,1 @@
-export type { ApiErrorResponse } from '../../shared/types';
+export type { AppError, ApiErrorResponse } from '../../shared/types';

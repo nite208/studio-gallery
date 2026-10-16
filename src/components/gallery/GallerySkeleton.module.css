@@ -1,0 +1,41 @@
+.grid {
+  columns: 1;
+  column-gap: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    columns: 2;
+  }
+}
+
+@media (min-width: 960px) {
+  .grid {
+    columns: 3;
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid {
+    columns: 4;
+  }
+}
+
+.card {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  background-color: var(--color-light-brown);
+  border-radius: 4px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
